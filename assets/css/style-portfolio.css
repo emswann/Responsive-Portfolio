@@ -1,0 +1,91 @@
+/* CSS stylesheet to style HTML elements in the content area of the Responsive Portfolio website.
+ 
+   NAME: style-portfolio.css
+   AUTHOR: Elaina Swann
+   DATE: 11/30/2017
+   REVISION LOG:  
+*/
+
+/* Content area.
+   NOTE: Main and sidebar areas are styled in the common css stylesheet because they do not change across webpages. However, we are going to override main height attribute because we do not need a footer on this webpage.
+*/
+main {
+  height: 90%;
+}
+
+.content {
+  background: #ffffff;
+  display: inline-block;
+  height: auto;
+  margin-top: 1.875rem;
+  padding: 0;
+  width: 40.625rem;
+}
+
+/* Content heading. */
+.h1-content {
+  height: 100%;
+  margin: 0;
+  padding: 1.5rem 1.875rem 1.5rem 1.875rem;
+  text-align: left;
+  width: 36.825rem; /* Need to subtract margin width due to inheritance. */
+}
+
+#hr-content {
+  background:#cccccc;
+  margin: 0 1.875rem 0 1.875rem;
+  padding: 0;
+  width: auto;
+}
+
+/* Container holding portfolio images. */
+.img-container {
+  height: 12.5rem;
+  margin-bottom: 1.875rem;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  width: 17.1875rem;
+}
+
+/* Define margins for specific gallery images since they are not consistent in the layout. */
+#img-container-1, #img-container-3, #img-container-5 {
+  float: left;
+  margin-left: 1.875rem;
+}
+
+#img-container-2, #img-container-4 {
+  float: right;
+  margin-right: 1.875rem;
+}
+
+#img-container-1, #img-container-2 {
+  margin-top: 1.875rem;
+}
+
+/* Position the image to a position inside the image container. */
+.img-portfolio {
+  height: 12.5rem;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 17.1875rem;
+  z-index: 1; /* Must be smaller than .img-link. */
+}
+
+/* Position the link to a position inside the image container. */
+.img-link {
+  background: #4aaaa5;
+  bottom: .625rem;
+  color: #ffffff;
+  font-size: 1rem;
+  height: 3.75rem;
+  left: 0;
+  line-height: 3.75rem;
+  position: absolute;
+  text-decoration: none;
+  width: inherit;
+  z-index: 2; /* Must be larger than .img-portfolio. */
+}

@@ -1,0 +1,221 @@
+/* CSS stylesheet to style common HTML elements across the Responsive Portfolio website.
+  
+   NAME: style-common.css
+   AUTHOR: Elaina Swann
+   DATE: 11/30/2017
+   REVISION LOG:  
+*/
+
+/* Set box-sizing so padding and borders are included in the pre-defined height/width of an element. Margins are NOT included in the pre-defined height/width. */
+* {
+  box-sizing: border-box;
+}
+
+/* Set up overall area of the webpage to be responsive. */
+html, body {
+  font-size: 1em;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Specifically style to set font and max dimensions. */
+body {
+  background-image: url("../images/vintage-concrete.png");
+  font-family: "Arial", "Helvetica Neue", "Helvetica", "sans-serif";
+}
+
+/* Overwrite heading elements (set in body element) with common font and color. */
+h1, h2, h3, h4, h5, h6 {
+  color: #4aaaa5;
+  font-family: "Georgia", "Times", "Times New Roman", "serif";
+}
+
+/******************************************************************************/
+/* Header area. Styled here because element is consistent across webpages.    */
+/******************************************************************************/
+header {
+  background: #ffffff;
+  border-bottom: .125rem solid #cccccc;
+  height: 10%;
+  margin: 0;
+  overflow: auto;
+  padding: 0 12.5rem 0 12.5rem;
+  position: relative;
+  width: 100%;
+}
+
+/* Style name heading and links to other webpages within the website with common and specific values. */
+.h1-header, .ul-html-pages, .li-html-pages, .link-html-pages {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+
+.h1-header {
+  align-items: center;
+  background: #4aaaa5;
+  color: #ffffff;
+  display: inline-flex;
+  font-size: 2rem;
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
+  text-align: left;
+} 
+
+.ul-html-pages {
+  float: right;
+  list-style: none;
+}
+
+.li-html-pages {
+  display: inline-block;
+}
+
+.link-html-pages {
+  align-items: center;
+  color: #777777;
+  display: flex;
+  font-size: 1.25rem;
+  padding-left: 1.25rem;
+  text-decoration: none;
+  text-align: right;
+}
+/******************************************************************************/
+
+/******************************************************************************/
+/* Main area. Styled here because element is consistent across webpages.      */
+/******************************************************************************/
+main {
+  height: 80%;
+  margin: 0;
+  overflow: auto;
+  padding: 0 12.5rem 0 12.5rem;
+  position: relative;
+  width: 100%;
+}
+
+
+/* NOTE: Content class is styled in webpage-specific css stylesheet because it is not consistent across webpages. */
+
+
+/******************************************************************************/
+/* Sidebar area where links are found to personal locations on social         */
+/* networking websites.                                                       */
+/* Styled here because the area is consistent across webpages.                */
+/******************************************************************************/
+.sidebar {
+  background: #ffffff;
+  float: right;
+  height: auto;
+  margin: 1.875rem 0 1.875rem 0;
+  padding: 0;
+  width: 16.875rem;
+}
+
+/* Sidebar heading. */
+.h2-sidebar {
+  height: auto;
+  margin: 1.5rem 1.875rem 1.5rem 1.875rem;
+  padding: 0;
+  text-align: left;
+  width: 13.125rem; /* Need to subtract margin width due to inheritance. */
+}
+
+#hr-sidebar {
+  background:#cccccc;
+  margin: 0 1.875rem 0 1.875rem;
+  padding: 0;
+  width: auto;
+}
+
+/* List area containing images and links to personal webpages within the social networking websites. */
+.ul-social {
+  height: 100%;
+  list-style: none;
+  margin: 1.875rem 1.875rem 1.875rem 1.875rem;
+  padding: 0;
+  width: 13.125rem; /* Need to subtract margin width due to inheritance. */
+}
+
+.li-social {
+  display: inline-block;
+  height: 3.75rem;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-align: left;
+  width: 3.75rem;
+}
+
+/* Define margins for list items since they are not consistent in the layout. */
+/* NOTE: Icons are set at 60px, but actually have an extra 3px margin which is part of the image.(64x64 image download is really 67x67). The extra margin could not be removed via the editor. 210 - (3 * 63) = 21 / 2 = 10.5px. */
+.li-github, .li-linkedin {
+  margin-right: .66rem;;
+}
+
+/* Need to set the dimensions based on the parent. */
+.link-social, .img-social {
+  height: inherit;
+  margin: 0;
+  padding: 0;
+  width: inherit;
+}
+
+/* Position the link to a position inside the list item. Top=0, Left=0 is the default, so position is implied. */
+.link-social {
+  position: absolute;
+  text-decoration: none;
+  z-index: 1; /* Must be smaller than .img-social. */
+}
+
+/* The image follows the link to a position inside the list item. */
+.img-social {
+  z-index: 2; /* Must be larger than .link-social. */
+}
+/******************************************************************************/
+
+/******************************************************************************/
+/* Footer area.                                                               */
+/******************************************************************************/
+footer, .h5-footer {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+footer {
+  background: #666666;
+  border-top: .5rem solid #4aaaa5;
+  height: 10%;
+  overflow: auto;
+  position: relative;
+}
+
+/* Footer heading. */
+.h5-footer {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+/******************************************************************************/
+
+/* Classes to clear elements. */
+.clear-both::after, .clear-right::after, .clear-left::after { 
+  content: "";
+  display: block; 
+}
+
+.clear-both::after {
+  clear: both;
+}
+
+.clear-both::right {
+  clear: right;
+}
+
+.clear-both::left {
+  clear: left;
+}

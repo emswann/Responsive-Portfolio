@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<!-- HTML file to create the "Portfolio" webpage for the Elaina Swann Responsive Portfolio website.
+  
+     NAME: portfolio.html
+     AUTHOR: Elaina Swann
+     DATE: 11/30/2017
+     REVISION LOG:
+-->
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="description" content="Elaina Swann's Portfolio webpage" />
+  <meta name="keywords" content="Elaina, Swann" />
+  <meta name="author" content="Elaina Swann" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Reset css styling to normalize the elements. -->
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+  <!-- Initialize css styling to default values. -->
+  <link rel="stylesheet" type="text/css" href="assets/css/initialize.css" />
+  <!-- Link to stylesheet common across all webpages of the Responsive Portfolio. -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style-common.css" />
+  <!-- Link to stylesheet specific to Portfolio webpage. -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style-portfolio.css"/>
+  <!-- Link to stylesheet containing mobile responsive layout. -->
+  <link rel="stylesheet" type="text/css" href="assets/css/media.css" />
+  
+  <title>Elaina Swann Portfolio Page</title>
+
+</head>
+
+<body>
+
+  <!-- This header is common to ALL webpages of the Responsive Portfolio. Need to clear due to float. 
+
+  NOTE: If you make a change here you must change ALL webpages. -->
+  <header class="clear-both">
+
+    <h1 class="h1-header">Elaina Swann</h1>
+
+    <!-- Links to access all pages of website. -->
+    <ul class="ul-html-pages">
+      <li class="li-html-pages"><a class="link-html-pages" href="index.html" alt="About" target="_self">About</a></li>
+
+      <li class="li-html-pages"><a class="link-html-pages" href="portfolio.html" alt="Portfolio" target="_self">Portfolio</a></li>
+
+      <li class="li-html-pages"><a class="link-html-pages" href="contact.html" alt="Contact" target="_self">Contact</a></li>
+    </ul>
+        
+  </header>
+
+  <main>
+     
+    <!-- Contains information specific to Portfolio webpage. This is the section specifically styled in a separate stylesheet (style-portfolio.css). Need to clear due to float. -->
+    <section class="content clear-both">
+
+      <h1 class="h1-content">Portfolio</h1>
+
+      <hr id="hr-content" />
+
+      <section class="img-container" id="img-container-1">
+        <img class="img-portfolio" src="assets/images/placeholder1-320x240px.jpg" alt="Elaina Swann Portfolio Placeholder 1" />
+
+        <a class="img-link" href="#" alt="Placeholder 1">Placeholder 1</a>
+      </section>
+ 
+      <section class="img-container" id="img-container-2">
+        <img class="img-portfolio" src="assets/images/placeholder2-320x240px.jpg" alt="Elaina Swann Portfolio Placeholder 2" />
+      
+        <a class="img-link" href="#" alt="Placeholder 2">Placeholder 2</a>
+      </section>
+    
+      <section class="img-container" id="img-container-3">
+        <img class="img-portfolio" src="assets/images/placeholder3-320x240px.jpg" alt="Elaina Swann Portfolio Placeholder 3" />
+
+        <a class="img-link" href="#" alt="Placeholder 3">Placeholder 3</a>
+      </section>
+
+      <section class="img-container" id="img-container-4">
+        <img class="img-portfolio" src="assets/images/placeholder4-320x240px.jpg" alt="Elaina Swann Portfolio Placeholder 4" />
+
+        <a class="img-link" href="#" alt="Placeholder 4">Placeholder 4</a>
+      </section>
+
+      <section class="img-container" id="img-container-5">
+         <img class="img-portfolio" src="assets/images/placeholder5-320x240px.jpg" alt="Elaina Swann Portfolio Placeholder 5" />
+
+        <a class="img-link" href="#" alt="Placeholder 5">Placeholder 5</a>
+      </section>
+
+
+    </section>
+
+    <!-- Links to social networking websites. This section is common to ALL webpages of the Responsive Portfolio. Need to clear due to float.
+
+    NOTE: If you make a change here you must change ALL webpages.
+
+    TO DO: Add links to personal social webpage. Links are currently pointing to top-level entry of social website in order to test basic functionality. --> 
+    <section class="sidebar clear-both">
+
+      <h2 class="h2-sidebar">Connect with Me</h2>
+
+      <hr id="hr-sidebar" />    
+        
+      <ul class="ul-social">
+        <li class="li-social li-github">
+          <a class="link-social" href="https://www.github.com" target="_blank">
+            <img class="img-social" src="assets/images/github-64px.png" alt="Github website" />
+          </a>
+        </li>
+          
+        <li class="li-social li-linkedin">
+          <a class="link-social" href="https://www.linkedin.com" target="_blank">
+            <img class="img-social" src="assets/images/linkedin-64px.png" alt="Linkedin website" />
+          </a>
+        </li>
+          
+        <li class="li-social li-stackoverflow">
+          <a class="link-social" href="https://www.stackoverflow.com" target="_blank">
+            <img class="img-social" src="assets/images/stackoverflow-64px.png" alt="Stackoverflow website" />
+            </a>
+        </li>
+      </ul>
+        
+    </section>
+
+  </main>
+
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<!-- HTML file to create the "Contact" webpage for the Elaina Swann Responsive Portfolio website.
+  
+     NAME: contact.html
+     AUTHOR: Elaina Swann
+     DATE: 11/30/2017
+     REVISION LOG:
+-->
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="description" content="Elaina Swann's Contact webpage" />
+  <meta name="keywords" content="Elaina, Swann" />
+  <meta name="author" content="Elaina Swann" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Reset css styling to normalize the elements. -->
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+  <!-- Initialize css styling to default values. -->
+  <link rel="stylesheet" type="text/css" href="assets/css/initialize.css" />
+  <!-- Link to stylesheet common across all webpages of the Responsive Portfolio. -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style-common.css" />
+  <!-- Link to stylesheet specific to Contact webpage. -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style-contact.css" />
+  <!-- Link to stylesheet containing mobile responsive layout. -->
+  <link rel="stylesheet" type="text/css" href="assets/css/media.css" />
+  
+  <title>Elaina Swann Contact Page</title>
+
+</head>
+
+<body>
+
+  <!-- This header is common to ALL webpages of the Responsive Portfolio. Need to clear due to float.
+
+  NOTE: If you make a change here you must change ALL webpages. -->
+  <header class="clear-both">
+
+    <h1 class="h1-header">Elaina Swann</h1>
+
+    <!-- Links to access all pages of website. -->
+    <ul class="ul-html-pages">
+      <li class="li-html-pages"><a class="link-html-pages" href="index.html" alt="About" target="_self">About</a></li>
+
+      <li class="li-html-pages"><a class="link-html-pages" href="portfolio.html" alt="Portfolio" target="_self">Portfolio</a></li>
+
+      <li class="li-html-pages"><a class="link-html-pages" href="contact.html" alt="Contact" target="_self">Contact</a></li>
+    </ul>
+
+  </header>
+       
+  <main>
+
+    <!-- Contains information specific to Contact webpage. This is the section specifically styled in a separate stylesheet (style-contact.css). -->
+    <section class="content">
+
+      <h1 class="h1-content">Contact</h1>
+
+      <hr id="hr-content" />
+      
+      <form action="/action_page.php"> <!-- TO DO: Create action file. 
+                                            This file does not exist. It is placeholder for now. -->
+        <h2 id="label-name">Name</h2>
+        <input id="form-name" type="text" name="name" value="John Smith">
+
+        <h2 id="label-email">Email</h2>
+        <input id="form-email" type="text" name="email" value="example@gmail.com">
+
+        <h2 id="label-message">Message</h2>
+        <input id="form-message" type="text" name="message" value="">
+        
+        <input id="form-submit" type="submit" value="Submit">
+      </form>
+
+    </section>
+
+    <!-- Links to social networking websites. This section is common to ALL webpages of the Responsive Portfolio. Need to clear due to float.
+
+    NOTE: If you make a change here you must change ALL webpages.
+
+    TO DO: Add links to personal social webpage. Links are currently pointing to top-level entry of social website in order to test basic functionality. --> 
+    <section class="sidebar clear-both">
+        
+      <h2 class="h2-sidebar">Connect with Me</h2>
+
+      <hr id="hr-sidebar" />     
+        
+      <ul class="ul-social">
+        <li class="li-social li-github">
+          <a class="link-social" href="https://www.github.com" target="_blank">
+            <img class="img-social" src="assets/images/github-64px.png" alt="Github website" />
+          </a>
+        </li>
+        
+        <li class="li-social li-linkedin">
+          <a class="link-social" href="https://www.linkedin.com" target="_blank">
+            <img class="img-social" src="assets/images/linkedin-64px.png" alt="Linkedin website" />
+          </a>
+        </li>
+        
+        <li class="li-social li-stackoverflow">
+          <a class="link-social" href="https://www.stackoverflow.com" target="_blank">
+            <img class="img-social" src="assets/images/stackoverflow-64px.png" alt="Stackoverflow website" />
+          </a>
+        </li>
+      </ul>
+        
+    </section>
+
+  </main>
+
+  <!-- This footer is common to About Me and Contact webpages of the Responsive Portfolio.
+
+  NOTE: If you make a change here you must change ALL webpages. -->
+  <footer>
+
+    <h5 class="h5-footer" >Copyright &#169; 2017 Elaina Swann</h5>
+
+  </footer>
+      
+</body>
+
+</html>
