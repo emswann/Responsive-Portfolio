@@ -15,16 +15,19 @@
   height: auto;
   margin: 1.875rem 0 1.875rem 0;
   padding: 0;
-  width: 40.625rem;
+  width: 68%;
 }
 
 /* Content heading */
 .h1-content {
+  align-items: center;
+  display: inline-flex;
+  font-size: 2rem;
   height: 100%;
-  margin: 0;
-  padding: 1.5rem 1.875rem 1.5rem 1.875rem;
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
   text-align: left;
-  width: 36.825rem; /* Need to subtract margin width due to inheritance. */
+  width: auto;
 }
 
 #hr-content {
@@ -39,7 +42,7 @@ form {
   font-size: .67rem;
   margin: 0 1.875rem 0 1.875rem;
   padding: 0;
-  width: 36.825rem; /* Need to subtract margin width due to inheritance. */
+  width: auto;
 }
 
 #label-name, #label-email, #label-message {
@@ -67,9 +70,9 @@ input {
 #form-submit {
   background: #4aaaa5;
   color: #ffffff;
-  font-size: 1.5rem;
-  height: 3.72rem;
+  font-size: 1rem;
+  height: 3rem;
   margin: .5rem 0 .5rem 0;
-  padding: 0; 
-  width: 10.72rem;
+  padding: .5rem; 
+  width: auto;
 }

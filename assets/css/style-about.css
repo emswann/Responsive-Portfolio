@@ -15,16 +15,19 @@
   height: auto;
   margin: 1.875rem 0 1.875rem 0;
   padding: 0;
-  width: 40.625rem;
+  width: 68%;
 }
 
 /* Content heading. */
 .h1-content {
+  align-items: center;
+  display: inline-flex;
+  font-size: 2rem;
   height: 100%;
-  margin: 0;
-  padding: 1.5rem 1.875rem 1.5rem 1.875rem;
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
   text-align: left;
-  width: 36.825rem; /* Need to subtract margin width due to inheritance. */
+  width: auto;
 }
 
 #hr-content {
@@ -47,9 +50,33 @@
 #profile-summary {
   font-size: 1rem;
   height: auto;
-  line-height: 1.7rem;
+  line-height: 1.5rem;
   margin: 0;
   padding: 1.875rem;
   text-align: justify;
-  width: inherit;
+  width: auto;
+}
+
+/*
+  These rules take effect when the browser's width
+  is less than or equal to 980px.
+*/
+@media screen and (max-width: 61.25em) {
+  #profile-summary {
+    width: 100%;
+  }
+}
+
+/*
+  These rules take effect when the browser's width
+  is less than or equal to 768px.
+*/
+@media screen and (max-width: 48em) {
+}
+
+/*
+  These rules take effect when the browser's width
+  is less than or equal to 640px.
+*/
+@media screen and (max-width: 40em) {
 }

@@ -41,7 +41,7 @@ header {
   height: 10%;
   margin: 0;
   overflow: auto;
-  padding: 0 12.5rem 0 12.5rem;
+  padding: 0 15% 0 15%;
   position: relative;
   width: 100%;
 }
@@ -68,6 +68,7 @@ header {
 .ul-html-pages {
   float: right;
   list-style: none;
+  text-align: right;
 }
 
 .li-html-pages {
@@ -81,7 +82,6 @@ header {
   font-size: 1.25rem;
   padding-left: 1.25rem;
   text-decoration: none;
-  text-align: right;
 }
 /******************************************************************************/
 
@@ -92,7 +92,7 @@ main {
   height: 80%;
   margin: 0;
   overflow: auto;
-  padding: 0 12.5rem 0 12.5rem;
+  padding: 0 15% 0 15%;
   position: relative;
   width: 100%;
 }
@@ -112,7 +112,7 @@ main {
   height: auto;
   margin: 1.875rem 0 1.875rem 0;
   padding: 0;
-  width: 16.875rem;
+  width: 29.5%;
 }
 
 /* Sidebar heading. */
@@ -121,7 +121,7 @@ main {
   margin: 1.5rem 1.875rem 1.5rem 1.875rem;
   padding: 0;
   text-align: left;
-  width: 13.125rem; /* Need to subtract margin width due to inheritance. */
+  width: auto
 }
 
 #hr-sidebar {
@@ -137,7 +137,7 @@ main {
   list-style: none;
   margin: 1.875rem 1.875rem 1.875rem 1.875rem;
   padding: 0;
-  width: 13.125rem; /* Need to subtract margin width due to inheritance. */
+  width: auto;
 }
 
 .li-social {
