@@ -40,7 +40,7 @@
 /* Container holding portfolio images. */
 .img-container {
   height: 12.5rem;
-  margin-bottom: 1.875rem;
+  margin-bottom: 1.25rem;
   padding: 0;
   position: relative;
   text-align: center;
@@ -50,16 +50,16 @@
 /* Define margins for specific gallery images since they are not consistent in the layout. */
 #img-container-1, #img-container-3, #img-container-5 {
   float: left;
-  margin-left: 1.875rem;
+  margin-left: 1.875em;
 }
 
 #img-container-2, #img-container-4 {
   float: right;
-  margin-right: 1.875rem;
+  margin-right: 1.875em;
 }
 
 #img-container-1, #img-container-2 {
-  margin-top: 1.875rem;
+  margin-top: 1.875em;
 }
 
 /* Position the image to a position inside the image container. */
@@ -85,33 +85,130 @@
   line-height: 3.75rem;
   position: absolute;
   text-decoration: none;
-  width: inherit;
+  width: 100%;
   z-index: 2; /* Must be larger than .img-portfolio. */
 }
 
+/* NOTE: Max width is set to 1360px or 85em. The webpages will function normally between 981px and 1360px. */
+
 /*
   These rules take effect when the browser's width
-  is less than or equal to 980px.
+  is between 769px and 980px (inclusive)..
 */
-@media screen and (max-width: 61.25em) {
-  .img-container {
-    padding: 1em;
-    position: relative;
-    text-align: center;
-    width: 100%;
+@media screen and (max-width: 980px) and (min-width: 769px) {
+  html, body {
+    font-size: .75em; /* Set font-size to 12px. */
+  }
+
+  .content {
+    width: 60%;
+  }
+
+  .sidebar {
+    width: 37.5%;
+  }
+
+  /* Using ids here to make sure the ids above to not reassign values due to precedence. */
+  #img-container-1, #img-container-2, #img-container-3, #img-container-4, #img-container-5 {
+    float: none;
+    height: 10.9375rem;
+    margin: 1rem 20% 0 20%;
+    width: 60%;
+  }
+
+  #img-container-5 {
+    margin-bottom: 1rem;
   }
 }
 
-/*
-  These rules take effect when the browser's width
-  is less than or equal to 768px.
-*/
-@media screen and (max-width: 48em) {
+@media screen and (max-width: 768px) and (min-width: 641px) {
+  html, body {
+    font-size: .75em; /* Set font-size to 12px. */
+  }
+
+  header, main {
+    padding: 0 5% 0 5%;
+  }
+
+  .sidebar {
+    float: none;
+  }
+
+  .content, .sidebar {
+    width: 100%;
+  }
+
+  #img-container-1, #img-container-3, #img-container-5 {
+    margin-left: 5%;
+    width: 40%;
+  }
+
+  #img-container-2, #img-container-4 {
+    margin-right: 5%;
+    width: 40%;
+  }
+
+  .h2-sidebar, .ul-social {
+    display: inline-flex;
+  }
 }
 
-/*
-  These rules take effect when the browser's width
-  is less than or equal to 640px.
-*/
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 640px) {
+  html, body {
+    font-size: .75em; /* Set font-size to 12px. */
+  }
+
+  header {
+    padding: 0;
+  }
+  
+  main {
+    padding: 0 5% 0 5%;
+  }
+
+  .sidebar {
+    float: none;
+  }
+    
+  .content, .sidebar {
+    width: 100%;
+  }
+
+  /* Using ids here to make sure the ids above to not reassign values due to precedence. */
+  #img-container-1, #img-container-2, #img-container-3, #img-container-4, #img-container-5 {
+    float: none;
+    height: 10.9375rem;
+    margin: 1rem 25% 0 25%;
+    width: 50%;
+  }
+
+  #img-container-5 {
+    margin-bottom: 1rem;
+  }
+
+  .h2-sidebar, .ul-social {
+    display: inline-flex;
+  }
+
+  .h1-header {
+    height: 50%;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .ul-html-pages {
+    float: none;
+    height: 50%;
+    text-align: center;
+    width: 100%;
+  }
+
+  .li-html-pages {
+    width: 33%;
+  }
+
+  .link-html-pages {
+    justify-content: center;
+    padding: 0;
+  }
 }

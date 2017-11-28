@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 header {
   background: #ffffff;
   border-bottom: .125rem solid #cccccc;
-  height: 10%;
+  height: 7%;
   margin: 0;
   overflow: auto;
   padding: 0 15% 0 15%;
@@ -89,7 +89,7 @@ header {
 /* Main area. Styled here because element is consistent across webpages.      */
 /******************************************************************************/
 main {
-  height: 80%;
+  height: 86%;
   margin: 0;
   overflow: auto;
   padding: 0 15% 0 15%;
@@ -188,7 +188,7 @@ footer, .h5-footer {
 footer {
   background: #666666;
   border-top: .5rem solid #4aaaa5;
-  height: 10%;
+  height: 7%;
   overflow: auto;
   position: relative;
 }
