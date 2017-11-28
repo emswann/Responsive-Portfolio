@@ -16,6 +16,7 @@ html, body {
   font-size: 1em;
   height: 100%;
   margin: 0;
+  max-width: 85rem;
   padding: 0;
   width: 100%;
 }
@@ -68,7 +69,6 @@ header {
 .ul-html-pages {
   float: right;
   list-style: none;
-  text-align: right;
 }
 
 .li-html-pages {
@@ -117,7 +117,7 @@ main {
 
 /* Sidebar heading. */
 .h2-sidebar {
-  height: auto;
+  height: 100%;
   margin: 1.5rem 1.875rem 1.5rem 1.875rem;
   padding: 0;
   text-align: left;
@@ -212,10 +212,10 @@ footer {
   clear: both;
 }
 
-.clear-both::right {
+.clear-both::after {
   clear: right;
 }
 
-.clear-both::left {
+.clear-both::after {
   clear: left;
 }

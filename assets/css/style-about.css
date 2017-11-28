@@ -37,12 +37,20 @@
   width: auto;
 }
 
+/* Container to manipulate about content. */
+#about-content {
+  height: auto;
+  margin: 1.875rem;
+  padding: 0;
+  width: auto;
+}
+
 /* Profile picture. */
 #img-profile {
-  height: 9.375rem;
   float: left;
-  margin: 1.875rem 1.875rem 0 1.875rem;
-  padding: 0;
+  height: 9.375rem;
+  margin: 0;
+  padding-right: 1.875rem;
   width: 12.5rem;
 }
 
@@ -52,31 +60,7 @@
   height: auto;
   line-height: 1.5rem;
   margin: 0;
-  padding: 1.875rem;
+  padding: 0;
   text-align: justify;
   width: auto;
-}
-
-/*
-  These rules take effect when the browser's width
-  is less than or equal to 980px.
-*/
-@media screen and (max-width: 61.25em) {
-  #profile-summary {
-    width: 100%;
-  }
-}
-
-/*
-  These rules take effect when the browser's width
-  is less than or equal to 768px.
-*/
-@media screen and (max-width: 48em) {
-}
-
-/*
-  These rules take effect when the browser's width
-  is less than or equal to 640px.
-*/
-@media screen and (max-width: 40em) {
 }

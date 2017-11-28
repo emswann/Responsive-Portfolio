@@ -7,12 +7,8 @@
 */
 
 /* Content area.
-   NOTE: Main and sidebar areas are styled in the common css stylesheet because they do not change across webpages. However, we are going to override main height attribute because we do not need a footer on this webpage.
+   NOTE: Main and sidebar areas are styled in the common css stylesheet because they do not change across webpages.
 */
-main {
-  height: 90%;
-}
-
 .content {
   background: #ffffff;
   display: inline-block;
@@ -91,4 +87,31 @@ main {
   text-decoration: none;
   width: inherit;
   z-index: 2; /* Must be larger than .img-portfolio. */
+}
+
+/*
+  These rules take effect when the browser's width
+  is less than or equal to 980px.
+*/
+@media screen and (max-width: 61.25em) {
+  .img-container {
+    padding: 1em;
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/*
+  These rules take effect when the browser's width
+  is less than or equal to 768px.
+*/
+@media screen and (max-width: 48em) {
+}
+
+/*
+  These rules take effect when the browser's width
+  is less than or equal to 640px.
+*/
+@media screen and (max-width: 40em) {
 }

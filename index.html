@@ -36,7 +36,7 @@
   <!-- This header is common to ALL webpages of the Responsive Portfolio. Need to clear due to float. 
 
   NOTE: If you make a change here you must change ALL webpages. -->
-  <header class="clear-both">
+  <header class="container clear-both">
 
     <h1 class="h1-header">Elaina Swann</h1>
 
@@ -51,7 +51,7 @@
 
   </header>
 
-  <main>
+  <main class="container">
 
     <!-- Contains information specific to About Me webpage. This is the section specifically styled in a separate stylesheet (style-about.css). Need to clear due to float. -->
     <section class="content clear-both">
@@ -60,11 +60,15 @@
 
       <hr id="hr-content" />
 
-      <img id="img-profile" src="assets/images/Elaina-Swann-Profile.jpg" alt="Elaina Swann Profile Picture" />
+      <div id="about-content">
 
-      <p id="profile-summary">
-        I moved to the Bluffton, SC area over a year ago and thoroughly enjoy the sunny, beach life. I previously lived in Eastern PA on a 16-acre property complete with horses and all types of wildlife. I love any type of animal! Prior to PA, I lived in AL, NJ, GA and MS. As you can probably guess, I am not a huge fan of cold weather.<br /><br /> I earned my BS degree in CS and Math from the University of Alabama in Huntsville. I have been programming for 26 years and have seen many technologies. As a senior level programmer, I have also worked as an SME and project lead. However, I have never strayed far from actual development work. My expertise is in C, object-oriented languages (C++/Java), relational databases and scripting languages (Perl, Unix). I have experience on both Windows and Unix/Linux environments. I love to solve problems. If not a developer, I would definitely be working in a field with an -ology on the end of it or maybe Forensic Science.<br /><br /> When I am not on the computer, you can find me walking, listening to music, or involved with something athletic. You might even catch me watching crime solving shows on TV or solving puzzles.
-      </p>
+        <img id="img-profile" src="assets/images/Elaina-Swann-Profile.jpg" alt="Elaina Swann Profile Picture" />
+
+        <p id="profile-summary">
+          I moved to the Bluffton, SC area over a year ago and thoroughly enjoy the sunny, beach life. I previously lived in Eastern PA on a 16-acre property complete with horses and all types of wildlife. I love any type of animal! Prior to PA, I lived in AL, NJ, GA and MS. As you can probably guess, I am not a huge fan of cold weather.<br /><br /> I earned my BS degree in CS and Math from the University of Alabama in Huntsville. I have been programming for 26 years and have seen many technologies. As a senior level programmer, I have also worked as an SME and project lead. However, I have never strayed far from actual development work. My expertise is in C, object-oriented languages (C++/Java), relational databases and scripting languages (Perl, Unix). I have experience on both Windows and Unix/Linux environments. I love to solve problems. If not a developer, I would definitely be working in a field with an -ology on the end of it or maybe Forensic Science.<br /><br /> When I am not on the computer, you can find me walking, listening to music, or involved with something athletic. You might even catch me watching crime solving shows on TV or solving puzzles.
+        </p>
+        
+      </div>
 
     </section> 
 
@@ -103,10 +107,10 @@
 
   </main>
 
-  <!-- This footer is common to About Me and Contact webpages of the Responsive Portfolio.
+  <!-- This header is common to ALL webpages of the Responsive Portfolio. 
 
   NOTE: If you make a change here you must change ALL webpages. -->
-  <footer>
+  <footer class="container">
 
     <h5 class="h5-footer" >Copyright &#169; 2017 Elaina Swann</h5>
 
